@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --textintern: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, hsla(183, 81%, 36%, 1), hsla(210, 92%, 26%, 1));
+    height: 100vh;
+    width: 100%;
+    color: var(--textintern);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    width: 550px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.322)
+}
+
+.label-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.masfem {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.custom-radio {
+    border: 1px solid #CECECE;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+}
+
+.custom-radio span {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+
+input[type='radio']:checked + .custom-radio {
+    border-color: #129EA6;
+  }
+  
+  input[type='radio']:checked + .custom-radio span {
+    background: #129EA6;
+  }
+
+#txtano {
+    padding: 6px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #CECECE;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+  align-items: center;
+  background-image: radial-gradient(100% 100% at 100% 0, #05427F 0, #129EA6 100%);
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: #0B7F85 0 2px 2px,#0B7F85 0 7px 10px -2px, #0B7F85 0 -2px 0 inset;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 1;
+  padding: 8px;
+  text-decoration: none;
+  transition: .15s ease;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#button:hover {
+  box-shadow: #0B7F85 0 2px 2px,#0B7F85 0 7px 10px -2px, #0B7F85 0 -2px 0 inset;
+  transform: translateY(-2px);
+}
+
+#res {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+footer {
+    text-align: center;
+}

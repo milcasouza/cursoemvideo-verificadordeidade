@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="ano">
+                <p>Ano de Nascimento:</p>
+                <input type="number" name="txtano" id="txtano" min="0">
+            </div>
+
+            <div class="sexo">
+                <p>Sexo:</p>
+                <div class="label-container">
+                    <label class="masfem" for="mas">
+                        <input type="radio" name="radsex" id="mas" checked> <!-- quando o "name" é diferente, os dois inputs acabam por poder ficar marcados -->
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <p>Masculino</p>
+                    </label>
+    
+                    <label class="masfem" for="fem">
+                        <input type="radio" name="radsex" id="fem">
+                        <div class="custom-radio">
+                            <span></span>
+                        </div>
+                        <p>Feminino</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button">
+                <input id="button" type="button" value="Verificar" onclick="verificar()">
+            </div>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Milca Souza com Curso em Vídeo.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
